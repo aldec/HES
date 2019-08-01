@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<board schema_version="2.1" vendor="Aldec.com" name="HES-US-440" display_name="Virtex UltraScale HES-US-440 (FPGA1)" url="https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale/hes_us_440" preset_file="preset.xml" >
+
+<images>
+<image name="HES-US-440.jpg" display_name="HES-US-440 Board" sub_type="board" resolution="high">
+<description>HES-US-440 Board File Image</description>
+</image>
+</images>
+<compatible_board_revisions>
+  <revision id="0">1.0-2-E</revision>
+</compatible_board_revisions>
+<file_version>1.0-2-E</file_version>
+<description>Virtex UltraScale HES-US-440 Acceleration Board</description>
+<parameters>
+    <parameter name="heat_sink_type" value="medium" value_type="string" />
+    <parameter name="heat_sink_temperature" value_type="range" value_min="20.0" value_max="30.0" />
+  </parameters>
+<components>
+  <component name="part0" display_name="Virtex UltraScale HES-US-440 Acceleration Board" type="fpga" part_name="xcvu440-flga2892-2-e" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://www.xilinx.com/products/silicon-devices/fpga/virtex-ultrascale.html">
+       <description>Virtex-UltraScale FPGA part on the board</description>
+	   
+	<interfaces>
+
+        <interface mode="slave" name="default_100mhz_clk" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="default_100mhz_clk" preset_proc="default_100mhz_clk_preset">
+         <parameters>
+           <parameter name="frequency" value="100000000" />
+         </parameters>
+          
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+            <preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+          </preferred_ips>
+          
+          <port_maps>
+            <port_map logical_port="CLK_P" physical_port="default_100mhz_clk_p" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="default_100mhz_clk_p" />
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="CLK_N" physical_port="default_100mhz_clk_n" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="default_100mhz_clk_n" />
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>
+        
+        <interface mode="slave" name="default_200mhz_clk" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="default_200mhz_clk" preset_proc="default_200mhz_clk_preset">
+         <parameters>
+            <parameter name="frequency" value="200000000" />
+          </parameters>
+          
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+            <preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+          </preferred_ips>
+          
+          <port_maps>
+            <port_map logical_port="CLK_P" physical_port="default_200mhz_clk_p" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="default_200mhz_clk_p" />
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="CLK_N" physical_port="default_200mhz_clk_n" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="default_200mhz_clk_n" />
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>        
+
+        <interface mode="slave" name="default_300mhz_clk" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="default_300mhz_clk" preset_proc="default_300mhz_clk_preset">
+         
+         <parameters>
+            <parameter name="frequency" value="300000000" />
+          </parameters>
+          
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+            <preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+          </preferred_ips>
+          
+          <port_maps>
+            <port_map logical_port="CLK_P" physical_port="default_300mhz_clk_p" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="default_300mhz_clk_p" />
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="CLK_N" physical_port="default_300mhz_clk_n" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="default_300mhz_clk_n" />
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>    
+
+        <interface mode="slave" name="default_400mhz_clk" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="default_400mhz_clk" preset_proc="default_400mhz_clk_preset">
+         
+         <parameters>
+            <parameter name="frequency" value="400000000" />
+          </parameters>
+          
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+            <preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+          </preferred_ips>
+          
+          <port_maps>
+            <port_map logical_port="CLK_P" physical_port="default_400mhz_clk_p" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="default_400mhz_clk_p" />
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="CLK_N" physical_port="default_400mhz_clk_n" dir="in">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="default_400mhz_clk_n" />
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>
+        
+	</interfaces>
+  
+  </component>
+
+
+  
+  <component name="default_100mhz_clk" display_name="100 MHz System differential clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+    <description>1.2V LVDS differential 100 MHz oscillator used as system differential clock on the board</description>
+    <parameters>
+      <parameter name="frequency" value="100000000"/>
+    </parameters>
+  </component>
+    
+  <component name="default_200mhz_clk" display_name="200 MHz System differential clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+    <description>1.2V LVDS differential 200 MHz oscillator used as system differential clock on the board</description>
+    <parameters>
+      <parameter name="frequency" value="200000000"/>
+    </parameters>
+  </component>
+  
+  <component name="default_300mhz_clk" display_name="300 MHz System differential clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+    <description>1.2V LVDS differential 300 MHz oscillator used as system differential clock on the board</description>
+    <parameters>
+      <parameter name="frequency" value="300000000"/>
+    </parameters>
+  </component>
+  
+  <component name="default_400mhz_clk" display_name="400 MHz System differential clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+    <description>1.2V LVDS differential 400 MHz oscillator used as system differential clock on the board</description>
+    <parameters>
+      <parameter name="frequency" value="400000000"/>
+    </parameters>
+  </component>
+
+</components>
+
+<jtag_chains>
+  <jtag_chain name="chain1">
+    <position name="0" component="part0"/>
+  </jtag_chain>
+</jtag_chains>
+
+<connections>
+  <connection name="part0_default_100mhz_clk" component1="part0" component2="default_100mhz_clk">
+    <connection_map name="part0_100mhz_clk" c1_st_index="0" c1_end_index="1" c2_st_index="0" c2_end_index="1" typical_delay="5"/>
+  </connection>
+  <connection name="part0_default_200mhz_clk" component1="part0" component2="default_200mhz_clk">
+    <connection_map name="part0_200mhz_clk" c1_st_index="2" c1_end_index="3" c2_st_index="0" c2_end_index="1" typical_delay="5"/>
+  </connection>
+  <connection name="part0_default_300mhz_clk" component1="part0" component2="default_300mhz_clk">
+    <connection_map name="part0_300mhz_clk" c1_st_index="4" c1_end_index="5" c2_st_index="0" c2_end_index="1" typical_delay="5"/>
+  </connection>
+  <connection name="part0_default_400mhz_clk" component1="part0" component2="default_400mhz_clk">
+    <connection_map name="part0_400mhz_clk" c1_st_index="6" c1_end_index="7" c2_st_index="0" c2_end_index="1" typical_delay="5"/>
+  </connection>	
+</connections>
+
+ <ip_associated_rules>
+    <ip_associated_rule name="default">
+	   <ip vendor="xilinx.com" library="ip" name="util_ds_buf" version="*" ip_interface="CLK_IN_D">
+          <associated_board_interfaces>
+		     <associated_board_interface name="default_100mhz_clk" order="0"/> 
+		     <associated_board_interface name="default_200mhz_clk" order="1"/> 
+		     <associated_board_interface name="default_300mhz_clk" order="2"/> 
+		     <associated_board_interface name="default_400mhz_clk" order="3"/> 
+          </associated_board_interfaces>
+       </ip>
+	</ip_associated_rule>
+ </ip_associated_rules>
+</board>

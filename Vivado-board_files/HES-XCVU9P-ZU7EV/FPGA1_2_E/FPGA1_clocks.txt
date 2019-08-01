@@ -1,0 +1,84 @@
+*# General purpose clock
+*CLK_OSC2_N		F15
+*CLK_OSC2_P		G15				100MHz clock available on FPGA1 chip bank 70
+
+
+*# CLK1 Clock Generator I2C configurable
+*CLK1_OUT1_FPGA1_N	AW26
+*CLK1_OUT1_FPGA1_P	AV26			CLK1 OUT1 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+*CLK1_OUT4_FPGA1_N	AU19
+*CLK1_OUT4_FPGA1_P	AT19			CLK1 OUT4 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+*CLK1_OUT6_FPGA1_N	BC9
+*CLK1_OUT6_FPGA1_P	BB9				CLK1 OUT6 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+*CLK1_OUT8_FPGA1_N	BA8
+*CLK1_OUT8_FPGA1_P	BA9				CLK1 OUT8 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+
+
+*# CLK2 Clock Generator I2C configurable
+*CLK2_OUT2_N		AG37
+*CLK2_OUT2_P		AG36			CLK2 OUT2 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+*CLK2_OUT3_N		M10
+*CLK2_OUT3_P		M11				CLK2 OUT3 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+*CLK2_OUT4_N		T10
+*CLK2_OUT4_P		T11				CLK2 OUT4 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+*CLK2_OUT5_N		AY39
+*CLK2_OUT5_P		AY38			CLK2 OUT5 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+*CLK2_OUT6_N		D10
+*CLK2_OUT6_P		D11				CLK2 OUT6 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+*CLK2_OUT8_N		K39
+*CLK2_OUT8_P		K38				CLK2 OUT8 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip
+
+
+# SO_DIMM
+CLK0_200M_N		K32
+CLK0_200M_P		L32				CLK0 OUT0 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip as reference clock for SO_DIMM1
+CLK1_200M_N		AY36
+CLK1_200M_P		AY35			CLK0 OUT1 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip as reference clock for SO_DIMM0
+
+
+# RLD3A
+CLK3_200M_N		BA23
+CLK3_200M_P		AY23			CLK0 OUT3 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip as reference clock for RLD3A interface
+CLK4_200M_N		BA13
+CLK4_200M_P		AY13			CLK0 OUT4 clock frequency from 100 Hz to 1028 MHz available in FPGA1 chip as reference clock for RLD3B interface
+
+
+# SATA
+CLK_SATA0_N		Y10
+CLK_SATA0_P		Y11				150MHz Reference Clock for SATA interface available in FPGA1
+CLK_SATA1_N		AA37
+CLK_SATA1_P		AA36			150MHz Reference Clock for SATA interface available in FPGA1
+CLK_SATA2_N		AD10
+CLK_SATA2_P		AD11			150MHz Reference Clock for SATA interface available in FPGA1
+
+
+# QSFP28
+CLK_QSFP0_N		BA41
+CLK_QSFP0_P		BA40			156.25MHz Reference Clock for QSFP28 interface available in FPGA1
+CLK_QSFP1_N		AV39
+CLK_QSFP1_P		AV38			156.25MHz Reference Clock for QSFP28 interface available in FPGA1
+
+
+# DisplayPort
+CLK_DP_N		U37
+CLK_DP_P		U36				135MHz Reference Clock for DisplayPort Interface available in FPGA1
+FPGA1_DP_CLKN	?BB7
+FPGA1_DP_CLKP	?BA7			output? clock for DisplayPort?
+
+
+# FireFly
+FPGA1_FF0_CLK_TO_FPGA_N		AL37
+FPGA1_FF0_CLK_TO_FPGA_P		AL36		100MHz reference clock for FireFly Interface available in FPGA1
+FPGA1_FF1_CLK_TO_FPGA_N		AR37
+FPGA1_FF1_CLK_TO_FPGA_P		AR36		100MHz reference clock for FireFly Interface available in FPGA1
+
+
+# PCIe
+CLK_PCIE_CLK1N				V10
+CLK_PCIE_CLK1P				V11			100MHz reference clock for PCIe to USB3.0 Interface available in FPGA1
+PCIEX1_CREFCLK1_N			AC37
+PCIEX1_CREFCLK1_P			AC36		100MHz reference clock for FPGA0 <=> FPGA1 PCIe x1
+PCIEX8_CREFCLK0_N			AM10
+PCIEX8_CREFCLK0_P			AM11		100MHz reference clock for PCIe x16 Finger Connector [8:15]
+PCIEX8_CREFCLK1_N			AT10
+PCIEX8_CREFCLK1_P			AT11		100MHz reference clock for PCIe x16 Finger Connector [0:7]

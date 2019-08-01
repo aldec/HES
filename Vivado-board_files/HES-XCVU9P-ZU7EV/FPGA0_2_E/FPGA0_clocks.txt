@@ -1,0 +1,51 @@
+# General purpose clocks
+FPGA0_PS_CLK	R24	LVCMOS25?		50MHz oscillator dedicated for FPGA0 PS system clock source
+PS_PADI			M25
+PS_PADO			L25	LVDS_25?		32.768kHz crystal for FPGA0 PS Real-Time Clock
+CLK_OSC0_N		L10
+CLK_OSC0_P		M10	LVDS_25		100MHz clock available on FPGA0 PL chip bank 87
+CLK_OSC1_N		K8
+CLK_OSC1_P		L8	LVDS_25		200MHz clock available on FPGA0 PL chip bank 87
+
+
+# CLK1 Clock Generator I2C configurable
+CLK0_FPGA0_N	G11	
+CLK0_FPGA0_P	H11	LVDS		CLK1 OUT0 clock frequency from 100 Hz to 1028 MHz available in FPGA0 PL chip
+CLK1_FPGA0_N	F16	
+CLK1_FPGA0_P	F17	LVDS		CLK1 OUT3 clock frequency from 100 Hz to 1028 MHz available in FPGA0 PL chip
+
+
+# CLK2 Clock Generator I2C configurable
+CLK_GT0_N		AD7	
+CLK_GT0_P		AD8	LVDS?	CLK2 OUT0 clock frequency from 100 Hz to 1028 MHz available in FPGA0 PL chip
+CLK_GT1_N		T7	
+CLK_GT1_P		T8	LVDS?	CLK2 OUT1 clock frequency from 100 Hz to 1028 MHz available in FPGA0 PL chip
+
+
+# PL DDR4A
+CLK2_200M_N		AJ12
+CLK2_200M_P		AH12	DIFF_SSTL12_DCI		CLK0 OUT2 clock frequency from 100 Hz to 1028 MHz available in FPGA0 PL chip as reference clock for PL DDR4A interface
+CLK5_200M_N		AH17
+CLK5_200M_P		AH18	DIFF_SSTL12_DCI		CLK0 OUT5 clock frequency from 100 Hz to 1028 MHz available in FPGA0 PL chip as reference clock for PL DDR4B interface
+
+
+# DisplayPort
+CLK_PS_DP_N		P28 (MGTREFCLK1N)	
+CLK_PS_DP_P		P27 (MGTREFCLK1P)	CLK0 OUT6 clock available in FPGA0 PS chip as reference clock for DisplayPort interface
+
+
+# USB
+CLK_PS_USB_N	M28 (MGTREFCLK2N)	
+CLK_PS_USB_P	M27 (MGTREFCLK2P)	CLK0 OUT8 clock available in FPGA0 PS chip as reference clock for USB interface
+
+
+# SATA
+CLK_PS_SATA_N	M32 (MGTREFCLK3N)	
+CLK_PS_SATA_P	M31 (MGTREFCLK3P)	CLK0 OUT9 clock available in FPGA0 PS chip as reference clock for SATA interface
+
+
+# PCIe
+PCIEX1_CREFCLK0_N	T28 (MGTREFCLK0N)	
+PCIEX1_CREFCLK0_P	T27 (MGTREFCLK0P)	100MHz reference clock for FPGA0 PS <=> FPGA1 PCIe x1
+PCIEX8_CREFCLK2_N	V7	
+PCIEX8_CREFCLK2_P	V8					100MHz reference clock for FPGA0 PL PCIe x8 Finger Connector [0:7]

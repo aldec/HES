@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xcvu440-flga2892-1-c">
+<pins>
+    <pin index="0"    name ="default_100mhz_clk_p"      iostandard="LVDS"            loc="C33" />
+    <pin index="1"    name ="default_100mhz_clk_n"      iostandard="LVDS"            loc="C34" />
+
+    <pin index="2"    name ="default_200mhz_clk_p"      iostandard="LVDS"            loc="N27"/>
+    <pin index="3"    name ="default_200mhz_clk_n"      iostandard="LVDS"            loc="N28"/>
+
+    <pin index="4"    name ="default_300mhz_clk_p"      iostandard="LVDS"            loc="AY38"/>
+    <pin index="5"    name ="default_300mhz_clk_n"      iostandard="LVDS"            loc="BA38"/>
+
+    <pin index="6"    name ="default_400mhz_clk_p"      iostandard="LVDS"            loc="AY37" />
+    <pin index="7"    name ="default_400mhz_clk_n"      iostandard="LVDS"            loc="BA37" />
+</pins>
+</part_info>
