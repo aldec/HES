@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+<ip_presets schema="1.0">
+
+   <ip_preset preset_proc_name="clk_100mhz_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="100"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk_250mhz_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="250"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk_400mhz_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="400"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk_qsfp_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="156.25"/> <!-- Default value is 156.25MHz. Change it according to the Clock Generator Configuration -->
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDSGTE" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="pcie_crefclk_preset">
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDSGTE" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="leds_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_GPIO_WIDTH" value="4"/> 
+          <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/> 
+	  <user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/>
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
+          <user_parameter name="CONFIG.C_GPIO2_WIDTH" value="4"/> 
+          <user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="1"/> 
+	  <user_parameter name="CONFIG.C_ALL_INPUTS_2" value="0"/>
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="GPIO1">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_USE_GPO1" value="1"/> 
+          <user_parameter name="CONFIG.C_GPO1_SIZE" value="4"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="GPIO2">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_USE_GPO2" value="1"/> 
+          <user_parameter name="CONFIG.C_GPO2_SIZE" value="4"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="GPIO3">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_USE_GPO3" value="1"/> 
+          <user_parameter name="CONFIG.C_GPO3_SIZE" value="4"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="GPIO4">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_USE_GPO4" value="1"/> 
+          <user_parameter name="CONFIG.C_GPO4_SIZE" value="4"/> 
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpa_1x_preset">   
+	<ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+	  <user_parameters>
+		<user_parameter name="CONFIG.LINE_RATE" value="10" />
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.NUM_OF_CORES" value="1" />
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y1" />
+	  </user_parameters>
+	</ip>
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.NUM_LANES" value="1" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />			
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y12" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>	
+   </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpa_2x_preset">  
+   <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+	  <user_parameters>
+		<user_parameter name="CONFIG.LINE_RATE" value="10" />
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.NUM_OF_CORES" value="2" />
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y1" />
+	  </user_parameters>
+	</ip>	
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.NUM_LANES" value="2" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />						
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y12~X0Y13" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>	
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpa_3x_preset">  
+	<ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+	  <user_parameters>
+		<user_parameter name="CONFIG.LINE_RATE" value="10" />
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.NUM_OF_CORES" value="3" />
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y1" />
+	  </user_parameters>
+	</ip>
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.NUM_LANES" value="3" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />									
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y12~X0Y14" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>	
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpa_4x_preset">  
+	<ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      	  <user_parameters>
+		<user_parameter name="CONFIG.LINE_RATE" value="10" />
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        	<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        	<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y1" />
+	  </user_parameters>
+	</ip>	
+	<ip vendor="xilinx.com" library="ip" name="l_ethernet">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.LINE_RATE" value="40" />
+        	<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        	<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y1" />
+	  </user_parameters>
+	</ip>
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />			
+		<user_parameter name="CONFIG.NUM_LANES" value="4" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />								
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y12~X0Y15" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>		
+	<ip vendor="xilinx.com" library="ip" name="cmac_usplus">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.CMAC_CAUI4_MODE" value="1" />		
+		<user_parameter name="CONFIG.NUM_LANES" value="4" />		
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />		
+		<user_parameter name="CONFIG.CMAC_CORE_SELECT" value="CMACE4_X0Y0" />
+		<user_parameter name="CONFIG.GT_GROUP_SELECT" value= "X0Y4~X0Y7" />
+		<user_parameter name="CONFIG.RS_FEC_TRANSCODE_BYPASS" value= "0" />
+	  </user_parameters>
+	</ip>		
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpa_8x_preset">  
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />			
+		<user_parameter name="CONFIG.NUM_LANES" value="8" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />								
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y12~X0Y19" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>		
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpb_1x_preset">   
+	<ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+	  <user_parameters>
+		<user_parameter name="CONFIG.LINE_RATE" value="10" />
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.NUM_OF_CORES" value="1" />
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y2" />
+	  </user_parameters>
+	</ip>	
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.NUM_LANES" value="1" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />			
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y4" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>	
+   </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpb_2x_preset">  
+   <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+	  <user_parameters>
+		<user_parameter name="CONFIG.LINE_RATE" value="10" />
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.NUM_OF_CORES" value="2" />
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y2" />
+	  </user_parameters>
+	</ip>		
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.NUM_LANES" value="2" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />						
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y4~X0Y5" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>	
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpb_3x_preset">  
+	<ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+	  <user_parameters>
+		<user_parameter name="CONFIG.LINE_RATE" value="10" />
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.NUM_OF_CORES" value="3" />
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y2" />
+	  </user_parameters>
+	</ip>
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.NUM_LANES" value="3" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />									
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y4~X0Y6" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>	
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpb_4x_preset">  
+	<ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      	  <user_parameters>
+		<user_parameter name="CONFIG.LINE_RATE" value="10" />
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.NUM_OF_CORES" value="4" />
+        	<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        	<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y2" />
+	  </user_parameters>
+	</ip>	
+	<ip vendor="xilinx.com" library="ip" name="l_ethernet">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+		<user_parameter name="CONFIG.LINE_RATE" value="40" />
+        	<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        	<user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y2" />
+	  </user_parameters>
+	</ip>
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />			
+		<user_parameter name="CONFIG.NUM_LANES" value="4" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />								
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y4~X0Y7" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>		
+	<ip vendor="xilinx.com" library="ip" name="cmac_usplus">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+		<user_parameter name="CONFIG.CMAC_CAUI4_MODE" value="1" />		
+		<user_parameter name="CONFIG.NUM_LANES" value="4" />		
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />		
+		<user_parameter name="CONFIG.CMAC_CORE_SELECT" value="CMACE4_X0Y0" />
+		<user_parameter name="CONFIG.GT_GROUP_SELECT" value= "X0Y8~X0Y11" />
+		<user_parameter name="CONFIG.RS_FEC_TRANSCODE_BYPASS" value= "0" />
+	  </user_parameters>
+	</ip>		
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpb_8x_preset">  
+	<ip vendor="xilinx.com" library="ip" name="interlaken">
+	  <user_parameters>
+		<user_parameter name="CONFIG.GT_TYPE" value="GTY" />			
+		<user_parameter name="CONFIG.NUM_LANES" value="8" />
+		<user_parameter name="CONFIG.LINE_RATE" value= "12.5" />			
+		<user_parameter name="CONFIG.GT_REF_CLK_FREQ" value= "156.25" />								
+		<user_parameter name="CONFIG.GT_SELECT" value="X0Y4~X0Y11" />
+		<user_parameter name="CONFIG.ILKN_CORE_LOC" value= "ILKNE4_X0Y0" />
+	  </user_parameters>
+	</ip>	
+  </ip_preset>
+
+  <ip_preset preset_proc_name="pciex1_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X1" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="250_MHz" /> 
+        <user_parameter name="CONFIG.axisten_freq" value="250" /> 
+        <user_parameter name="CONFIG.axi_data_width" value="64_bit" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_device_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_revision_id" value="0B" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_Use_Class_Code_Lookup_Assistant" value="true" /> 
+        <user_parameter name="CONFIG.pf0_base_class_menu" value="Memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_base" value="05" /> 
+        <user_parameter name="CONFIG.pf0_sub_class_interface_menu" value="Other_memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_sub" value="80" /> 
+        <user_parameter name="CONFIG.pf0_class_code_interface" value="00" /> 
+        <user_parameter name="CONFIG.pf0_class_code" value="058000" /> 
+        <user_parameter name="CONFIG.axilite_master_en" value="false" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.INS_LOSS_NYQ" value="5" /> 
+        <user_parameter name="CONFIG.coreclk_freq" value="250" /> 
+        <user_parameter name="CONFIG.plltype" value="QPLL1" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_table_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_pba_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip>
+	
+    <ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X1" /> 
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="250_MHz" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_REVISION_ID" value="0B" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_VENDOR_ID" value="1716" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pf2_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf1_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf1_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf2_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf2_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf2_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf3_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf3_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf3_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf0_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf0_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf0_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf0_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.gen_x0y1" value="false" /> 
+        <user_parameter name="CONFIG.gen_x1y2" value="true" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf1_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf2_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf3_vendor_id" value="1716" /> 
+	<user_parameter name="CONFIG.axisten_if_enable_client_tag" value="true" /> 
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.tx_fc_if" value="false" /> 
+        <user_parameter name="CONFIG.en_pcie_conf" value="true" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  
+   <ip_preset preset_proc_name="pciex2_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X2" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="250_MHz" /> 
+        <user_parameter name="CONFIG.axisten_freq" value="250" /> 
+        <user_parameter name="CONFIG.axi_data_width" value="128_bit" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_device_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_revision_id" value="0B" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_Use_Class_Code_Lookup_Assistant" value="true" /> 
+        <user_parameter name="CONFIG.pf0_base_class_menu" value="Memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_base" value="05" /> 
+        <user_parameter name="CONFIG.pf0_sub_class_interface_menu" value="Other_memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_sub" value="80" /> 
+        <user_parameter name="CONFIG.pf0_class_code_interface" value="00" /> 
+        <user_parameter name="CONFIG.pf0_class_code" value="058000" /> 
+        <user_parameter name="CONFIG.axilite_master_en" value="false" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.INS_LOSS_NYQ" value="5" /> 
+        <user_parameter name="CONFIG.coreclk_freq" value="250" /> 
+        <user_parameter name="CONFIG.plltype" value="QPLL1" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_table_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_pba_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X2" /> 
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="250_MHz" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_REVISION_ID" value="0B" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF1_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF1_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF2_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF3_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_VENDOR_ID" value="1716" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pf2_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf1_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf1_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf2_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf2_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf2_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf3_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf3_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf3_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf0_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf0_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf0_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf0_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.gen_x0y1" value="false" /> 
+        <user_parameter name="CONFIG.gen_x1y2" value="true" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf1_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf2_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf3_vendor_id" value="1716" /> 
+	<user_parameter name="CONFIG.axisten_if_enable_client_tag" value="true" /> 
+        <user_parameter name="CONFIG.ext_pcie_cfg_space_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_dsn_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf3_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.tx_fc_if" value="false" /> 
+        <user_parameter name="CONFIG.en_pcie_conf" value="true" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip>
+   </ip_preset>
+   
+   <ip_preset preset_proc_name="pciex4_preset">
+     <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X4" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="250_MHz" /> 
+        <user_parameter name="CONFIG.axisten_freq" value="250" /> 
+        <user_parameter name="CONFIG.axi_data_width" value="256_bit" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_device_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_revision_id" value="0B" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_Use_Class_Code_Lookup_Assistant" value="true" /> 
+        <user_parameter name="CONFIG.pf0_base_class_menu" value="Memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_base" value="05" /> 
+        <user_parameter name="CONFIG.pf0_sub_class_interface_menu" value="Other_memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_sub" value="80" /> 
+        <user_parameter name="CONFIG.pf0_class_code_interface" value="00" /> 
+        <user_parameter name="CONFIG.pf0_class_code" value="058000" /> 
+        <user_parameter name="CONFIG.axilite_master_en" value="false" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.INS_LOSS_NYQ" value="5" /> 
+        <user_parameter name="CONFIG.coreclk_freq" value="250" /> 
+        <user_parameter name="CONFIG.plltype" value="QPLL1" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_table_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_pba_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X4" /> 
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="250_MHz" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_REVISION_ID" value="0B" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF1_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF1_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF2_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF3_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_VENDOR_ID" value="1716" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pf2_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf1_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf1_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf2_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf2_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf2_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf3_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf3_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf3_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf0_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf0_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf0_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf0_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.gen_x0y1" value="false" /> 
+        <user_parameter name="CONFIG.gen_x1y2" value="true" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf1_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf2_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf3_vendor_id" value="1716" /> 
+	<user_parameter name="CONFIG.axisten_if_enable_client_tag" value="true" /> 
+        <user_parameter name="CONFIG.ext_pcie_cfg_space_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_dsn_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf3_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.tx_fc_if" value="false" /> 
+        <user_parameter name="CONFIG.en_pcie_conf" value="true" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip>
+   </ip_preset>
+  
+   <ip_preset preset_proc_name="pciex8_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X8" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="250_MHz" /> 
+        <user_parameter name="CONFIG.axisten_freq" value="250" /> 
+        <user_parameter name="CONFIG.axi_data_width" value="256_bit" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_device_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_revision_id" value="0B" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_Use_Class_Code_Lookup_Assistant" value="true" /> 
+        <user_parameter name="CONFIG.pf0_base_class_menu" value="Memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_base" value="05" /> 
+        <user_parameter name="CONFIG.pf0_sub_class_interface_menu" value="Other_memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_sub" value="80" /> 
+        <user_parameter name="CONFIG.pf0_class_code_interface" value="00" /> 
+        <user_parameter name="CONFIG.pf0_class_code" value="058000" /> 
+        <user_parameter name="CONFIG.axilite_master_en" value="false" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.INS_LOSS_NYQ" value="5" /> 
+        <user_parameter name="CONFIG.coreclk_freq" value="500" /> 
+        <user_parameter name="CONFIG.plltype" value="QPLL1" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_table_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_pba_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X8" /> 
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="250_MHz" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_REVISION_ID" value="0B" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF1_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF1_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF2_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF3_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_VENDOR_ID" value="1716" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pf2_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf1_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf1_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf2_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf2_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf2_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf3_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf3_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf3_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf0_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf0_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf0_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf0_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.gen_x0y1" value="false" /> 
+        <user_parameter name="CONFIG.gen_x1y2" value="true" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf1_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf2_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf3_vendor_id" value="1716" /> 
+	<user_parameter name="CONFIG.axisten_if_enable_client_tag" value="true" /> 
+        <user_parameter name="CONFIG.ext_pcie_cfg_space_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_dsn_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf3_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.tx_fc_if" value="false" /> 
+        <user_parameter name="CONFIG.en_pcie_conf" value="true" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  
+   <ip_preset preset_proc_name="pciex16_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.functional_mode" value="DMA" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X16" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="250_MHz" /> 
+        <user_parameter name="CONFIG.axisten_freq" value="250" /> 
+        <user_parameter name="CONFIG.axi_data_width" value="512_bit" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_device_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_revision_id" value="0B" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf0_subsystem_id" value="5406" /> 
+        <user_parameter name="CONFIG.pf0_Use_Class_Code_Lookup_Assistant" value="true" /> 
+        <user_parameter name="CONFIG.pf0_base_class_menu" value="Memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_base" value="05" /> 
+        <user_parameter name="CONFIG.pf0_sub_class_interface_menu" value="Other_memory_controller" /> 
+        <user_parameter name="CONFIG.pf0_class_code_sub" value="80" /> 
+        <user_parameter name="CONFIG.pf0_class_code_interface" value="00" /> 
+        <user_parameter name="CONFIG.pf0_class_code" value="058000" /> 
+        <user_parameter name="CONFIG.axilite_master_en" value="false" /> 
+        <user_parameter name="CONFIG.INS_LOSS_NYQ" value="5" /> 
+        <user_parameter name="CONFIG.coreclk_freq" value="500" /> 
+        <user_parameter name="CONFIG.plltype" value="QPLL1" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_table_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.pf0_msix_cap_pba_bir" value="BAR_0" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID_mqdma" value="903F" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip><ip vendor="xilinx.com" library="ip" name="pcie4_uscale_plus">
+      <user_parameters>
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_SPEED" value="8.0_GT/s" /> 
+        <user_parameter name="CONFIG.PL_LINK_CAP_MAX_LINK_WIDTH" value="X16" /> 
+        <user_parameter name="CONFIG.REF_CLK_FREQ" value="250_MHz" /> 
+        <user_parameter name="CONFIG.PF0_DEVICE_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_REVISION_ID" value="0B" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_ID" value="5406" /> 
+        <user_parameter name="CONFIG.PF1_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF1_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF2_DEVICE_ID" value="903F" /> 
+        <user_parameter name="CONFIG.PF2_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF2_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF3_DEVICE_ID" value="903F" /> 
+        <user_parameter name="CONFIG.PF3_MSIX_CAP_PBA_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF3_MSIX_CAP_TABLE_BIR" value="BAR_1:0" /> 
+        <user_parameter name="CONFIG.PF0_SUBSYSTEM_VENDOR_ID" value="1716" /> 
+        <user_parameter name="CONFIG.pcie_blk_locn" value="X1Y0" /> 
+        <user_parameter name="CONFIG.pf2_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf1_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf1_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf1_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf2_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf2_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf2_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf3_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf3_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf3_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.pf0_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf0_bar2_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_type" value="Memory" /> 
+        <user_parameter name="CONFIG.pf0_bar2_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf0_bar2_scale" value="Gigabytes" /> 
+        <user_parameter name="CONFIG.pf0_bar2_size" value="64" /> 
+        <user_parameter name="CONFIG.gen_x0y1" value="false" /> 
+        <user_parameter name="CONFIG.gen_x1y2" value="true" /> 
+        <user_parameter name="CONFIG.vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf1_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf2_vendor_id" value="1716" /> 
+        <user_parameter name="CONFIG.pf3_vendor_id" value="1716" /> 
+	<user_parameter name="CONFIG.axisten_if_enable_client_tag" value="true" /> 
+        <user_parameter name="CONFIG.ext_pcie_cfg_space_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf0_dsn_enabled" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf2_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.pf3_bar0_64bit" value="true" /> 
+        <user_parameter name="CONFIG.pf3_bar0_size" value="512" /> 
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.tx_fc_if" value="false" /> 
+        <user_parameter name="CONFIG.en_pcie_conf" value="true" /> 
+        <user_parameter name="CONFIG.ins_loss_profile" value="Add-in Card" /> 
+        <user_parameter name="CONFIG.select_quad" value="GTH_Quad_227" /> 
+        <user_parameter name="CONFIG.enable_auto_rxeq" value="True" /> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+ <ip_preset preset_proc_name="ddr4_2133_preset">
+    <ip vendor="xilinx.com" library="ip" name="ddr4">
+      <user_parameters>
+	<user_parameter name="CONFIG.C0.DDR4_MemoryType" value="SODIMMs" />
+	<user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="938" />
+        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="4879" />
+	<user_parameter name="CONFIG.C0.DDR4_CustomParts" value="custom_parts_ddr4_single.csv" />
+	<user_parameter name="CONFIG.C0.DDR4_MemoryPart" value="DDR4_1R_ALDEC_CS15" />
+        <user_parameter name="CONFIG.C0.DDR4_CasWriteLatency" value="12" />
+        <user_parameter name="CONFIG.C0.DDR4_CasLatency" value="15" />
+        <user_parameter name="CONFIG.C0.DDR4_Mem_Add_Map" value="ROW_COLUMN_BANK_INTLV" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiAddressWidth" value="33" />
+        <user_parameter name="CONFIG.System_Clock" value="Differential" />
+        <user_parameter name="CONFIG.C0.DDR4_DataWidth" value="64" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiDataWidth" value="512" />
+        <user_parameter name="CONFIG.C0.DDR4_isCustom" value="true" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  
+ <ip_preset preset_proc_name="ddr4_1600_preset">
+    <ip vendor="xilinx.com" library="ip" name="ddr4">
+      <user_parameters>
+	<user_parameter name="CONFIG.C0.DDR4_MemoryType" value="SODIMMs" />
+	<user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="1250" />
+        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="5000" />
+	<user_parameter name="CONFIG.C0.DDR4_CustomParts" value="custom_parts_ddr4_single.csv" />
+	<user_parameter name="CONFIG.C0.DDR4_MemoryPart" value="DDR4_1R_ALDEC_CS12" />
+        <user_parameter name="CONFIG.C0.DDR4_CasWriteLatency" value="11" />
+        <user_parameter name="CONFIG.C0.DDR4_CasLatency" value="12" />
+        <user_parameter name="CONFIG.C0.DDR4_Mem_Add_Map" value="ROW_COLUMN_BANK_INTLV" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiAddressWidth" value="33" />
+        <user_parameter name="CONFIG.System_Clock" value="Differential" />
+        <user_parameter name="CONFIG.C0.DDR4_DataWidth" value="64" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiDataWidth" value="512" />
+        <user_parameter name="CONFIG.C0.DDR4_isCustom" value="true" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="uart_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_uartlite" ip_interface="UART">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_DATA_BITS" value="8"/>
+        <user_parameter name="CONFIG.C_BAUDRATE" value="115200"/>
+        <user_parameter name="CONFIG.PARITY" value="No_Parity"/>
+        <user_parameter name="CONFIG.C_USE_PARITY" value="0"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+</ip_presets>

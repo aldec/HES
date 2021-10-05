@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<board schema_version="2.1" vendor="Aldec.com" name="HES-US-1320_rev2" display_name="Virtex UltraScale XCVU440-FLGA2892 FPGA3 (with DDR4 single slot mode) on the HES-US-1320_rev2 board" url="https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale/hes_us_1320" preset_file="preset.xml">
+
+<images>
+	<image name="HES-US-1320_rev2.jpg" display_name="HES-US-1320_rev2 board" sub_type="board" resolution="high">
+		<description>HES-US-1320_rev2 Board File Image</description>
+	</image>
+</images>
+<compatible_board_revisions>
+	<revision id="0">1.0</revision>
+</compatible_board_revisions>
+<file_version>1.0</file_version>
+<description>HES-US-1320_rev2 Acceleration Board</description>
+<parameters>
+	<parameter name="heat_sink_type" value="medium" value_type="string" />
+	<parameter name="heat_sink_temperature" value_type="range" value_min="20.0" value_max="30.0" />
+</parameters>
+<components>
+	<component name="part0" display_name="HES-US-1320_rev2 Acceleration Board" type="fpga" part_name="xcvu440-flga2892-2-e" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://www.xilinx.com/products/silicon-devices/fpga/virtex-ultrascale.html">
+		<description>Virtex-UltraScale XCVU440-FLGA2892 FPGA3 part on the board</description>
+
+		<interfaces>
+
+			<interface mode="slave" name="clk0_gtx05" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk0_gtx05" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="200000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK0_GTX05N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK0_GTX05N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK0_GTX05P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK0_GTX05P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk0_gtx06" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk0_gtx06" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="200000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK0_GTX06N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK0_GTX06N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK0_GTX06P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK0_GTX06P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk0_gtx07" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk0_gtx07" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="200000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK0_GTX07N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK0_GTX07N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK0_GTX07P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK0_GTX07P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk1_gtx07" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk1_gtx07" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="156250000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK1_GTX07N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK1_GTX07N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK1_GTX07P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK1_GTX07P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk1_gtx08" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk1_gtx08" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="156250000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK1_GTX08N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK1_GTX08N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK1_GTX08P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK1_GTX08P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk1_gtx09" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk1_gtx09" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="156250000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK1_GTX09N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK1_GTX09N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK1_GTX09P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK1_GTX09P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk2_gtx05" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk2_gtx05" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="200000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK2_GTX05N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK2_GTX05N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK2_GTX05P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK2_GTX05P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk3_gtx08" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk3_gtx08" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="156250000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK3_GTX08N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK3_GTX08N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK3_GTX08P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK3_GTX08P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk3_gtx09" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk3_gtx09" preset_proc="clk_gtx_preset">		
+				<parameters>
+					<parameter name="frequency" value="156250000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK3_GTX09N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK3_GTX09N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK3_GTX09P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK3_GTX09P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk0_fpga3" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk0_fpga3" preset_proc="clk0_fpga3_preset">
+				<parameters>
+					<parameter name="frequency" value="200000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK0_FPGA3N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK0_FPGA3N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK0_FPGA3P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK0_FPGA3P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk1_fpga3" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk1_fpga3" preset_proc="clk1_fpga3_preset">
+				<parameters>
+					<parameter name="frequency" value="300000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK1_FPGA3N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK1_FPGA3N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK1_FPGA3P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK1_FPGA3P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk2_fpga3" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk2_fpga3" preset_proc="clk2_fpga3_preset">
+				<parameters>
+					<parameter name="frequency" value="250000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK2_FPGA3N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK2_FPGA3N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK2_FPGA3P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK2_FPGA3P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk3_fpga3" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk3_fpga3" preset_proc="clk3_fpga3_preset">
+				<parameters>
+					<parameter name="frequency" value="400000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK3_FPGA3N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK3_FPGA3N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK3_FPGA3P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK3_FPGA3P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="clk_ref_fpga3" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="clk_ref_fpga3" preset_proc="clk0_fpga3_preset">		
+				<parameters>
+					<parameter name="frequency" value="200000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="CLK_REF_FPGA3N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK_REF_FPGA3N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="CLK_REF_FPGA3P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="CLK_REF_FPGA3P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="slave" name="fpga3_clk_200" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="fpga3_clk_200" preset_proc="clk0_fpga3_preset">		
+				<parameters>
+					<parameter name="frequency" value="200000000" />	
+				</parameters>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0" />
+					<preferred_ip vendor="xilinx.com" library="ip" name="util_ds_buf" order="0" />
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="CLK_N" physical_port="FPGA3_CLK_200_N" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_CLK_200_N" />
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CLK_P" physical_port="FPGA3_CLK_200_P" dir="in">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_CLK_200_P" />
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="master" name="ddr4_1600" type="xilinx.com:interface:ddr4_rtl:1.0" of_component="ddr4_1600" preset_proc="ddr4_1600_singleSlot_preset">
+				<description>DDR4 board interface, it can use DDR4 IP for connection.</description>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="ddr4" order="0"/>
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="ADR" physical_port="FPGA3_SODIMM_ADDR" dir="out" left="16" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_A00"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_A01"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_A02"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_A03"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_A04"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_A05"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_A06"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_A07"/>
+							<pin_map port_index="8" component_pin="FPGA3_SODIMM_A08"/>
+							<pin_map port_index="9" component_pin="FPGA3_SODIMM_A09"/>
+							<pin_map port_index="10" component_pin="FPGA3_SODIMM_A10"/>
+							<pin_map port_index="11" component_pin="FPGA3_SODIMM_A11"/>
+							<pin_map port_index="12" component_pin="FPGA3_SODIMM_A12"/>
+							<pin_map port_index="13" component_pin="FPGA3_SODIMM_A13"/>
+							<pin_map port_index="14" component_pin="FPGA3_SODIMM_A14"/>
+							<pin_map port_index="15" component_pin="FPGA3_SODIMM_A15"/>
+							<pin_map port_index="16" component_pin="FPGA3_SODIMM_A16"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="ACT_N" physical_port="FPGA3_SODIMM_ACT_N" dir="out">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_ACT_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="BA" physical_port="FPGA3_SODIMM_BA" dir="out" left="1" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_BA0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_BA1"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="BG" physical_port="FPGA3_SODIMM_BG" dir="out" left="1" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_BG0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_BG1"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CK_C" physical_port="FPGA3_SODIMM_CK2_N" dir="out" > 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CK2_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CK_T" physical_port="FPGA3_SODIMM_CK2_P" dir="out"> 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CK2_P"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CKE" physical_port="FPGA3_SODIMM_CKE2" dir="out" >
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CKE2"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CS_N" physical_port="FPGA3_SODIMM_CS4_N" dir="out" > 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CS4_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DM_N" physical_port="FPGA3_SODIMM_DM" dir="inout" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DM0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DM1"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DM2"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DM3"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DM4"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DM5"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DM6"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DM7"/>
+						</pin_maps>
+					</port_map>			
+					<port_map logical_port="DQ" physical_port="FPGA3_SODIMM_DQ" dir="inout" left="63" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQ00"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQ01"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQ02"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQ03"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQ04"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQ05"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQ06"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQ07"/>
+							<pin_map port_index="8" component_pin="FPGA3_SODIMM_DQ08"/>
+							<pin_map port_index="9" component_pin="FPGA3_SODIMM_DQ09"/>
+							<pin_map port_index="10" component_pin="FPGA3_SODIMM_DQ10"/>
+							<pin_map port_index="11" component_pin="FPGA3_SODIMM_DQ11"/>
+							<pin_map port_index="12" component_pin="FPGA3_SODIMM_DQ12"/>
+							<pin_map port_index="13" component_pin="FPGA3_SODIMM_DQ13"/>
+							<pin_map port_index="14" component_pin="FPGA3_SODIMM_DQ14"/>
+							<pin_map port_index="15" component_pin="FPGA3_SODIMM_DQ15"/>
+							<pin_map port_index="16" component_pin="FPGA3_SODIMM_DQ16"/>
+							<pin_map port_index="17" component_pin="FPGA3_SODIMM_DQ17"/>
+							<pin_map port_index="18" component_pin="FPGA3_SODIMM_DQ18"/>
+							<pin_map port_index="19" component_pin="FPGA3_SODIMM_DQ19"/>
+							<pin_map port_index="20" component_pin="FPGA3_SODIMM_DQ20"/>
+							<pin_map port_index="21" component_pin="FPGA3_SODIMM_DQ21"/>
+							<pin_map port_index="22" component_pin="FPGA3_SODIMM_DQ22"/>
+							<pin_map port_index="23" component_pin="FPGA3_SODIMM_DQ23"/>
+							<pin_map port_index="24" component_pin="FPGA3_SODIMM_DQ24"/>
+							<pin_map port_index="25" component_pin="FPGA3_SODIMM_DQ25"/>
+							<pin_map port_index="26" component_pin="FPGA3_SODIMM_DQ26"/>
+							<pin_map port_index="27" component_pin="FPGA3_SODIMM_DQ27"/>
+							<pin_map port_index="28" component_pin="FPGA3_SODIMM_DQ28"/>
+							<pin_map port_index="29" component_pin="FPGA3_SODIMM_DQ29"/>
+							<pin_map port_index="30" component_pin="FPGA3_SODIMM_DQ30"/>
+							<pin_map port_index="31" component_pin="FPGA3_SODIMM_DQ31"/>
+							<pin_map port_index="32" component_pin="FPGA3_SODIMM_DQ32"/>
+							<pin_map port_index="33" component_pin="FPGA3_SODIMM_DQ33"/>
+							<pin_map port_index="34" component_pin="FPGA3_SODIMM_DQ34"/>
+							<pin_map port_index="35" component_pin="FPGA3_SODIMM_DQ35"/>
+							<pin_map port_index="36" component_pin="FPGA3_SODIMM_DQ36"/>
+							<pin_map port_index="37" component_pin="FPGA3_SODIMM_DQ37"/>
+							<pin_map port_index="38" component_pin="FPGA3_SODIMM_DQ38"/>
+							<pin_map port_index="39" component_pin="FPGA3_SODIMM_DQ39"/>
+							<pin_map port_index="40" component_pin="FPGA3_SODIMM_DQ40"/>
+							<pin_map port_index="41" component_pin="FPGA3_SODIMM_DQ41"/>
+							<pin_map port_index="42" component_pin="FPGA3_SODIMM_DQ42"/>
+							<pin_map port_index="43" component_pin="FPGA3_SODIMM_DQ43"/>
+							<pin_map port_index="44" component_pin="FPGA3_SODIMM_DQ44"/>
+							<pin_map port_index="45" component_pin="FPGA3_SODIMM_DQ45"/>
+							<pin_map port_index="46" component_pin="FPGA3_SODIMM_DQ46"/>
+							<pin_map port_index="47" component_pin="FPGA3_SODIMM_DQ47"/>
+							<pin_map port_index="48" component_pin="FPGA3_SODIMM_DQ48"/>
+							<pin_map port_index="49" component_pin="FPGA3_SODIMM_DQ49"/>
+							<pin_map port_index="50" component_pin="FPGA3_SODIMM_DQ50"/>
+							<pin_map port_index="51" component_pin="FPGA3_SODIMM_DQ51"/>
+							<pin_map port_index="52" component_pin="FPGA3_SODIMM_DQ52"/>
+							<pin_map port_index="53" component_pin="FPGA3_SODIMM_DQ53"/>
+							<pin_map port_index="54" component_pin="FPGA3_SODIMM_DQ54"/>
+							<pin_map port_index="55" component_pin="FPGA3_SODIMM_DQ55"/>
+							<pin_map port_index="56" component_pin="FPGA3_SODIMM_DQ56"/>
+							<pin_map port_index="57" component_pin="FPGA3_SODIMM_DQ57"/>
+							<pin_map port_index="58" component_pin="FPGA3_SODIMM_DQ58"/>
+							<pin_map port_index="59" component_pin="FPGA3_SODIMM_DQ59"/>
+							<pin_map port_index="60" component_pin="FPGA3_SODIMM_DQ60"/>
+							<pin_map port_index="61" component_pin="FPGA3_SODIMM_DQ61"/>
+							<pin_map port_index="62" component_pin="FPGA3_SODIMM_DQ62"/>
+							<pin_map port_index="63" component_pin="FPGA3_SODIMM_DQ63"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DQS_C" physical_port="FPGA3_SODIMM_DQS_N" dir="inout" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQS0_N"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQS1_N"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQS2_N"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQS3_N"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQS4_N"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQS5_N"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQS6_N"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQS7_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DQS_T" physical_port="FPGA3_SODIMM_DQS_P" dir="out" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQS0_P"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQS1_P"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQS2_P"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQS3_P"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQS4_P"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQS5_P"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQS6_P"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQS7_P"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="ODT" physical_port="FPGA3_SODIMM_ODT2" dir="out" >
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_ODT2"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="RESET_N" physical_port="FPGA3_SODIMM_RESET_N" dir="out">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_RESET_N"/>
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="master" name="ddr4_1866" type="xilinx.com:interface:ddr4_rtl:1.0" of_component="ddr4_1866" preset_proc="ddr4_1866_singleSlot_preset">
+				<description>DDR4 board interface, it can use DDR4 IP for connection.</description>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="ddr4" order="0"/>
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="ADR" physical_port="FPGA3_SODIMM_ADDR" dir="out" left="16" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_A00"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_A01"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_A02"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_A03"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_A04"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_A05"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_A06"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_A07"/>
+							<pin_map port_index="8" component_pin="FPGA3_SODIMM_A08"/>
+							<pin_map port_index="9" component_pin="FPGA3_SODIMM_A09"/>
+							<pin_map port_index="10" component_pin="FPGA3_SODIMM_A10"/>
+							<pin_map port_index="11" component_pin="FPGA3_SODIMM_A11"/>
+							<pin_map port_index="12" component_pin="FPGA3_SODIMM_A12"/>
+							<pin_map port_index="13" component_pin="FPGA3_SODIMM_A13"/>
+							<pin_map port_index="14" component_pin="FPGA3_SODIMM_A14"/>
+							<pin_map port_index="15" component_pin="FPGA3_SODIMM_A15"/>
+							<pin_map port_index="16" component_pin="FPGA3_SODIMM_A16"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="ACT_N" physical_port="FPGA3_SODIMM_ACT_N" dir="out">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_ACT_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="BA" physical_port="FPGA3_SODIMM_BA" dir="out" left="1" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_BA0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_BA1"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="BG" physical_port="FPGA3_SODIMM_BG" dir="out" left="1" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_BG0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_BG1"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CK_C" physical_port="FPGA3_SODIMM_CK2_N" dir="out" > 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CK2_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CK_T" physical_port="FPGA3_SODIMM_CK2_P" dir="out"> 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CK2_P"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CKE" physical_port="FPGA3_SODIMM_CKE2" dir="out" >
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CKE2"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CS_N" physical_port="FPGA3_SODIMM_CS4_N" dir="out" > 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CS4_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DM_N" physical_port="FPGA3_SODIMM_DM" dir="inout" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DM0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DM1"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DM2"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DM3"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DM4"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DM5"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DM6"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DM7"/>
+						</pin_maps>
+					</port_map>			
+					<port_map logical_port="DQ" physical_port="FPGA3_SODIMM_DQ" dir="inout" left="63" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQ00"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQ01"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQ02"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQ03"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQ04"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQ05"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQ06"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQ07"/>
+							<pin_map port_index="8" component_pin="FPGA3_SODIMM_DQ08"/>
+							<pin_map port_index="9" component_pin="FPGA3_SODIMM_DQ09"/>
+							<pin_map port_index="10" component_pin="FPGA3_SODIMM_DQ10"/>
+							<pin_map port_index="11" component_pin="FPGA3_SODIMM_DQ11"/>
+							<pin_map port_index="12" component_pin="FPGA3_SODIMM_DQ12"/>
+							<pin_map port_index="13" component_pin="FPGA3_SODIMM_DQ13"/>
+							<pin_map port_index="14" component_pin="FPGA3_SODIMM_DQ14"/>
+							<pin_map port_index="15" component_pin="FPGA3_SODIMM_DQ15"/>
+							<pin_map port_index="16" component_pin="FPGA3_SODIMM_DQ16"/>
+							<pin_map port_index="17" component_pin="FPGA3_SODIMM_DQ17"/>
+							<pin_map port_index="18" component_pin="FPGA3_SODIMM_DQ18"/>
+							<pin_map port_index="19" component_pin="FPGA3_SODIMM_DQ19"/>
+							<pin_map port_index="20" component_pin="FPGA3_SODIMM_DQ20"/>
+							<pin_map port_index="21" component_pin="FPGA3_SODIMM_DQ21"/>
+							<pin_map port_index="22" component_pin="FPGA3_SODIMM_DQ22"/>
+							<pin_map port_index="23" component_pin="FPGA3_SODIMM_DQ23"/>
+							<pin_map port_index="24" component_pin="FPGA3_SODIMM_DQ24"/>
+							<pin_map port_index="25" component_pin="FPGA3_SODIMM_DQ25"/>
+							<pin_map port_index="26" component_pin="FPGA3_SODIMM_DQ26"/>
+							<pin_map port_index="27" component_pin="FPGA3_SODIMM_DQ27"/>
+							<pin_map port_index="28" component_pin="FPGA3_SODIMM_DQ28"/>
+							<pin_map port_index="29" component_pin="FPGA3_SODIMM_DQ29"/>
+							<pin_map port_index="30" component_pin="FPGA3_SODIMM_DQ30"/>
+							<pin_map port_index="31" component_pin="FPGA3_SODIMM_DQ31"/>
+							<pin_map port_index="32" component_pin="FPGA3_SODIMM_DQ32"/>
+							<pin_map port_index="33" component_pin="FPGA3_SODIMM_DQ33"/>
+							<pin_map port_index="34" component_pin="FPGA3_SODIMM_DQ34"/>
+							<pin_map port_index="35" component_pin="FPGA3_SODIMM_DQ35"/>
+							<pin_map port_index="36" component_pin="FPGA3_SODIMM_DQ36"/>
+							<pin_map port_index="37" component_pin="FPGA3_SODIMM_DQ37"/>
+							<pin_map port_index="38" component_pin="FPGA3_SODIMM_DQ38"/>
+							<pin_map port_index="39" component_pin="FPGA3_SODIMM_DQ39"/>
+							<pin_map port_index="40" component_pin="FPGA3_SODIMM_DQ40"/>
+							<pin_map port_index="41" component_pin="FPGA3_SODIMM_DQ41"/>
+							<pin_map port_index="42" component_pin="FPGA3_SODIMM_DQ42"/>
+							<pin_map port_index="43" component_pin="FPGA3_SODIMM_DQ43"/>
+							<pin_map port_index="44" component_pin="FPGA3_SODIMM_DQ44"/>
+							<pin_map port_index="45" component_pin="FPGA3_SODIMM_DQ45"/>
+							<pin_map port_index="46" component_pin="FPGA3_SODIMM_DQ46"/>
+							<pin_map port_index="47" component_pin="FPGA3_SODIMM_DQ47"/>
+							<pin_map port_index="48" component_pin="FPGA3_SODIMM_DQ48"/>
+							<pin_map port_index="49" component_pin="FPGA3_SODIMM_DQ49"/>
+							<pin_map port_index="50" component_pin="FPGA3_SODIMM_DQ50"/>
+							<pin_map port_index="51" component_pin="FPGA3_SODIMM_DQ51"/>
+							<pin_map port_index="52" component_pin="FPGA3_SODIMM_DQ52"/>
+							<pin_map port_index="53" component_pin="FPGA3_SODIMM_DQ53"/>
+							<pin_map port_index="54" component_pin="FPGA3_SODIMM_DQ54"/>
+							<pin_map port_index="55" component_pin="FPGA3_SODIMM_DQ55"/>
+							<pin_map port_index="56" component_pin="FPGA3_SODIMM_DQ56"/>
+							<pin_map port_index="57" component_pin="FPGA3_SODIMM_DQ57"/>
+							<pin_map port_index="58" component_pin="FPGA3_SODIMM_DQ58"/>
+							<pin_map port_index="59" component_pin="FPGA3_SODIMM_DQ59"/>
+							<pin_map port_index="60" component_pin="FPGA3_SODIMM_DQ60"/>
+							<pin_map port_index="61" component_pin="FPGA3_SODIMM_DQ61"/>
+							<pin_map port_index="62" component_pin="FPGA3_SODIMM_DQ62"/>
+							<pin_map port_index="63" component_pin="FPGA3_SODIMM_DQ63"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DQS_C" physical_port="FPGA3_SODIMM_DQS_N" dir="inout" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQS0_N"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQS1_N"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQS2_N"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQS3_N"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQS4_N"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQS5_N"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQS6_N"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQS7_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DQS_T" physical_port="FPGA3_SODIMM_DQS_P" dir="out" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQS0_P"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQS1_P"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQS2_P"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQS3_P"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQS4_P"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQS5_P"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQS6_P"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQS7_P"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="ODT" physical_port="FPGA3_SODIMM_ODT2" dir="out" >
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_ODT2"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="RESET_N" physical_port="FPGA3_SODIMM_RESET_N" dir="out">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_RESET_N"/>
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+			<interface mode="master" name="ddr4_2100" type="xilinx.com:interface:ddr4_rtl:1.0" of_component="ddr4_2100" preset_proc="ddr4_2100_singleSlot_preset">
+				<description>DDR4 board interface, it can use DDR4 IP for connection.</description>
+				<preferred_ips>
+					<preferred_ip vendor="xilinx.com" library="ip" name="ddr4" order="0"/>
+				</preferred_ips>
+				<port_maps>
+					<port_map logical_port="ADR" physical_port="FPGA3_SODIMM_ADDR" dir="out" left="16" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_A00"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_A01"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_A02"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_A03"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_A04"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_A05"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_A06"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_A07"/>
+							<pin_map port_index="8" component_pin="FPGA3_SODIMM_A08"/>
+							<pin_map port_index="9" component_pin="FPGA3_SODIMM_A09"/>
+							<pin_map port_index="10" component_pin="FPGA3_SODIMM_A10"/>
+							<pin_map port_index="11" component_pin="FPGA3_SODIMM_A11"/>
+							<pin_map port_index="12" component_pin="FPGA3_SODIMM_A12"/>
+							<pin_map port_index="13" component_pin="FPGA3_SODIMM_A13"/>
+							<pin_map port_index="14" component_pin="FPGA3_SODIMM_A14"/>
+							<pin_map port_index="15" component_pin="FPGA3_SODIMM_A15"/>
+							<pin_map port_index="16" component_pin="FPGA3_SODIMM_A16"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="ACT_N" physical_port="FPGA3_SODIMM_ACT_N" dir="out">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_ACT_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="BA" physical_port="FPGA3_SODIMM_BA" dir="out" left="1" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_BA0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_BA1"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="BG" physical_port="FPGA3_SODIMM_BG" dir="out" left="1" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_BG0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_BG1"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CK_C" physical_port="FPGA3_SODIMM_CK2_N" dir="out" > 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CK2_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CK_T" physical_port="FPGA3_SODIMM_CK2_P" dir="out"> 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CK2_P"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CKE" physical_port="FPGA3_SODIMM_CKE2" dir="out" >
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CKE2"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="CS_N" physical_port="FPGA3_SODIMM_CS4_N" dir="out" > 
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_CS4_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DM_N" physical_port="FPGA3_SODIMM_DM" dir="inout" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DM0"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DM1"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DM2"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DM3"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DM4"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DM5"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DM6"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DM7"/>
+						</pin_maps>
+					</port_map>			
+					<port_map logical_port="DQ" physical_port="FPGA3_SODIMM_DQ" dir="inout" left="63" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQ00"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQ01"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQ02"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQ03"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQ04"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQ05"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQ06"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQ07"/>
+							<pin_map port_index="8" component_pin="FPGA3_SODIMM_DQ08"/>
+							<pin_map port_index="9" component_pin="FPGA3_SODIMM_DQ09"/>
+							<pin_map port_index="10" component_pin="FPGA3_SODIMM_DQ10"/>
+							<pin_map port_index="11" component_pin="FPGA3_SODIMM_DQ11"/>
+							<pin_map port_index="12" component_pin="FPGA3_SODIMM_DQ12"/>
+							<pin_map port_index="13" component_pin="FPGA3_SODIMM_DQ13"/>
+							<pin_map port_index="14" component_pin="FPGA3_SODIMM_DQ14"/>
+							<pin_map port_index="15" component_pin="FPGA3_SODIMM_DQ15"/>
+							<pin_map port_index="16" component_pin="FPGA3_SODIMM_DQ16"/>
+							<pin_map port_index="17" component_pin="FPGA3_SODIMM_DQ17"/>
+							<pin_map port_index="18" component_pin="FPGA3_SODIMM_DQ18"/>
+							<pin_map port_index="19" component_pin="FPGA3_SODIMM_DQ19"/>
+							<pin_map port_index="20" component_pin="FPGA3_SODIMM_DQ20"/>
+							<pin_map port_index="21" component_pin="FPGA3_SODIMM_DQ21"/>
+							<pin_map port_index="22" component_pin="FPGA3_SODIMM_DQ22"/>
+							<pin_map port_index="23" component_pin="FPGA3_SODIMM_DQ23"/>
+							<pin_map port_index="24" component_pin="FPGA3_SODIMM_DQ24"/>
+							<pin_map port_index="25" component_pin="FPGA3_SODIMM_DQ25"/>
+							<pin_map port_index="26" component_pin="FPGA3_SODIMM_DQ26"/>
+							<pin_map port_index="27" component_pin="FPGA3_SODIMM_DQ27"/>
+							<pin_map port_index="28" component_pin="FPGA3_SODIMM_DQ28"/>
+							<pin_map port_index="29" component_pin="FPGA3_SODIMM_DQ29"/>
+							<pin_map port_index="30" component_pin="FPGA3_SODIMM_DQ30"/>
+							<pin_map port_index="31" component_pin="FPGA3_SODIMM_DQ31"/>
+							<pin_map port_index="32" component_pin="FPGA3_SODIMM_DQ32"/>
+							<pin_map port_index="33" component_pin="FPGA3_SODIMM_DQ33"/>
+							<pin_map port_index="34" component_pin="FPGA3_SODIMM_DQ34"/>
+							<pin_map port_index="35" component_pin="FPGA3_SODIMM_DQ35"/>
+							<pin_map port_index="36" component_pin="FPGA3_SODIMM_DQ36"/>
+							<pin_map port_index="37" component_pin="FPGA3_SODIMM_DQ37"/>
+							<pin_map port_index="38" component_pin="FPGA3_SODIMM_DQ38"/>
+							<pin_map port_index="39" component_pin="FPGA3_SODIMM_DQ39"/>
+							<pin_map port_index="40" component_pin="FPGA3_SODIMM_DQ40"/>
+							<pin_map port_index="41" component_pin="FPGA3_SODIMM_DQ41"/>
+							<pin_map port_index="42" component_pin="FPGA3_SODIMM_DQ42"/>
+							<pin_map port_index="43" component_pin="FPGA3_SODIMM_DQ43"/>
+							<pin_map port_index="44" component_pin="FPGA3_SODIMM_DQ44"/>
+							<pin_map port_index="45" component_pin="FPGA3_SODIMM_DQ45"/>
+							<pin_map port_index="46" component_pin="FPGA3_SODIMM_DQ46"/>
+							<pin_map port_index="47" component_pin="FPGA3_SODIMM_DQ47"/>
+							<pin_map port_index="48" component_pin="FPGA3_SODIMM_DQ48"/>
+							<pin_map port_index="49" component_pin="FPGA3_SODIMM_DQ49"/>
+							<pin_map port_index="50" component_pin="FPGA3_SODIMM_DQ50"/>
+							<pin_map port_index="51" component_pin="FPGA3_SODIMM_DQ51"/>
+							<pin_map port_index="52" component_pin="FPGA3_SODIMM_DQ52"/>
+							<pin_map port_index="53" component_pin="FPGA3_SODIMM_DQ53"/>
+							<pin_map port_index="54" component_pin="FPGA3_SODIMM_DQ54"/>
+							<pin_map port_index="55" component_pin="FPGA3_SODIMM_DQ55"/>
+							<pin_map port_index="56" component_pin="FPGA3_SODIMM_DQ56"/>
+							<pin_map port_index="57" component_pin="FPGA3_SODIMM_DQ57"/>
+							<pin_map port_index="58" component_pin="FPGA3_SODIMM_DQ58"/>
+							<pin_map port_index="59" component_pin="FPGA3_SODIMM_DQ59"/>
+							<pin_map port_index="60" component_pin="FPGA3_SODIMM_DQ60"/>
+							<pin_map port_index="61" component_pin="FPGA3_SODIMM_DQ61"/>
+							<pin_map port_index="62" component_pin="FPGA3_SODIMM_DQ62"/>
+							<pin_map port_index="63" component_pin="FPGA3_SODIMM_DQ63"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DQS_C" physical_port="FPGA3_SODIMM_DQS_N" dir="inout" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQS0_N"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQS1_N"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQS2_N"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQS3_N"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQS4_N"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQS5_N"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQS6_N"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQS7_N"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="DQS_T" physical_port="FPGA3_SODIMM_DQS_P" dir="out" left="7" right="0">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_DQS0_P"/>
+							<pin_map port_index="1" component_pin="FPGA3_SODIMM_DQS1_P"/>
+							<pin_map port_index="2" component_pin="FPGA3_SODIMM_DQS2_P"/>
+							<pin_map port_index="3" component_pin="FPGA3_SODIMM_DQS3_P"/>
+							<pin_map port_index="4" component_pin="FPGA3_SODIMM_DQS4_P"/>
+							<pin_map port_index="5" component_pin="FPGA3_SODIMM_DQS5_P"/>
+							<pin_map port_index="6" component_pin="FPGA3_SODIMM_DQS6_P"/>
+							<pin_map port_index="7" component_pin="FPGA3_SODIMM_DQS7_P"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="ODT" physical_port="FPGA3_SODIMM_ODT2" dir="out" >
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_ODT2"/>
+						</pin_maps>
+					</port_map>
+					<port_map logical_port="RESET_N" physical_port="FPGA3_SODIMM_RESET_N" dir="out">
+						<pin_maps>
+							<pin_map port_index="0" component_pin="FPGA3_SODIMM_RESET_N"/>
+						</pin_maps>
+					</port_map>
+				</port_maps>
+			</interface>
+
+		</interfaces>
+
+	</component>
+
+	<component name="clk0_gtx05" display_name="200MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>200MHz GTH reference
+clock available on FPGA3 (bank 229)</description>
+		<parameters>
+			<parameter name="frequency" value="200000000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk0_gtx06" display_name="200MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>200MHz GTH reference
+clock available on FPGA3 (bank 227)</description>
+		<parameters>
+			<parameter name="frequency" value="200000000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk0_gtx07" display_name="200MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>200MHz GTH reference
+clock available on FPGA3 (bank 231)</description>
+		<parameters>
+			<parameter name="frequency" value="200000000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk1_gtx07" display_name="156.25MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>156.25MHz GTH reference
+clock available on FPGA3 (bank 229)</description>
+		<parameters>
+			<parameter name="frequency" value="156250000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk1_gtx08" display_name="156.25MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>156.25MHz GTH reference
+clock available on FPGA3 (bank 227)</description>
+		<parameters>
+			<parameter name="frequency" value="156250000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk1_gtx09" display_name="156.25MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>156.25MHz GTH reference
+clock available on FPGA3 (bank 231)</description>
+		<parameters>
+			<parameter name="frequency" value="156250000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk2_gtx05" display_name="200MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>200MHz GTH reference
+clock available on FPGA3 (bank 232)</description>
+		<parameters>
+			<parameter name="frequency" value="200000000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk3_gtx08" display_name="156.25MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>156.25MHz GTH reference
+clock available on FPGA3 (bank 230)</description>
+		<parameters>
+			<parameter name="frequency" value="156250000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk3_gtx09" display_name="156.25MHz GTH clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>156.25MHz GTH reference
+clock available on FPGA3 (bank 226)</description>
+		<parameters>
+			<parameter name="frequency" value="156250000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk0_fpga3" display_name="200MHz clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>200MHz clock output available in FPGA3 chip</description>
+		<parameters>
+			<parameter name="frequency" value="200000000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk1_fpga3" display_name="300MHz clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>300MHz clock output available in FPGA3 chip</description>
+		<parameters>
+			<parameter name="frequency" value="300000000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk2_fpga3" display_name="250MHz clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>250MHz clock output available in FPGA3 chip</description>
+		<parameters>
+			<parameter name="frequency" value="250000000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk3_fpga3" display_name="400MHz clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>400MHz clock output available in FPGA3 chip</description>
+		<parameters>
+			<parameter name="frequency" value="400000000"/>	
+		</parameters>
+	</component>
+
+	<component name="clk_ref_fpga3" display_name="200MHz clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>200MHz Reference Clock available in FPGA3</description>
+		<parameters>
+			<parameter name="frequency" value="200000000"/>	
+		</parameters>
+	</component>
+
+	<component name="fpga3_clk_200" display_name="DDR4 200MHz clock" type="chip" sub_type="system_clock" major_group="Clock Sources">
+		<description>DDR4 200MHz Reference Clock available in FPGA3</description>
+		<parameters>
+			<parameter name="frequency" value="200000000"/>	
+		</parameters>
+	</component>
+
+	<component name="ddr4_1600" display_name="DDR4 SODIMM 1600 single slot" type="chip" sub_type="ddr" major_group="External Memory">
+		<description>8GB DDR4 in SODIMM single slot (1600)</description>
+		<parameters>
+			<parameter name="ddr_type" value="ddr4"/>
+			<parameter name="size" value="8GB"/>
+		</parameters> 	  
+		<component_modes>
+			<component_mode name="ddr4_1600" display_name="ddr4_1600">
+				<interfaces>
+					<interface name="ddr4_1600"/>
+					<interface name="fpga3_clk_200" optional="true"/>
+				</interfaces>
+			</component_mode>
+		</component_modes>	  
+	</component>
+
+	<component name="ddr4_1866" display_name="DDR4 SODIMM 1866 single slot" type="chip" sub_type="ddr" major_group="External Memory">
+		<description>8GB DDR4 in SODIMM single slot (1866)</description>
+		<parameters>
+			<parameter name="ddr_type" value="ddr4"/>
+			<parameter name="size" value="8GB"/>
+		</parameters> 	  
+		<component_modes>
+			<component_mode name="ddr4_1866" display_name="ddr4_1866">
+				<interfaces>
+					<interface name="ddr4_1866"/>
+					<interface name="fpga3_clk_200" optional="true"/>
+				</interfaces>
+			</component_mode>
+		</component_modes>	  
+	</component>
+
+	<component name="ddr4_2100" display_name="DDR4 SODIMM 2100 single slot" type="chip" sub_type="ddr" major_group="External Memory">
+		<description>8GB DDR4 in SODIMM single slot (2100)</description>
+		<parameters>
+			<parameter name="ddr_type" value="ddr4"/>
+			<parameter name="size" value="8GB"/>
+		</parameters> 	  
+		<component_modes>
+			<component_mode name="ddr4_2100" display_name="ddr4_2100">
+				<interfaces>
+					<interface name="ddr4_2100"/>
+					<interface name="fpga3_clk_200" optional="true"/>
+				</interfaces>
+			</component_mode>
+		</component_modes>	  
+	</component>
+
+</components>
+
+<connections>
+
+	<connection name="part0_clk0_gtx05" component1="part0" component2="clk0_gtx05">
+		<connection_map name="part0_clk0_gtx05_0" c1_st_index="0" c1_end_index="1" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk0_gtx06" component1="part0" component2="clk0_gtx06">
+		<connection_map name="part0_clk0_gtx06_0" c1_st_index="2" c1_end_index="3" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk0_gtx07" component1="part0" component2="clk0_gtx07">
+		<connection_map name="part0_clk0_gtx07_0" c1_st_index="4" c1_end_index="5" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk1_gtx07" component1="part0" component2="clk1_gtx07">
+		<connection_map name="part0_clk1_gtx07_0" c1_st_index="6" c1_end_index="7" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk1_gtx08" component1="part0" component2="clk1_gtx08">
+		<connection_map name="part0_clk1_gtx08_0" c1_st_index="8" c1_end_index="9" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk1_gtx09" component1="part0" component2="clk1_gtx09">
+		<connection_map name="part0_clk1_gtx09_0" c1_st_index="10" c1_end_index="11" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk2_gtx05" component1="part0" component2="clk2_gtx05">
+		<connection_map name="part0_clk2_gtx05_0" c1_st_index="12" c1_end_index="13" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk3_gtx08" component1="part0" component2="clk3_gtx08">
+		<connection_map name="part0_clk3_gtx08_0" c1_st_index="14" c1_end_index="15" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk3_gtx09" component1="part0" component2="clk3_gtx09">
+		<connection_map name="part0_clk3_gtx09_0" c1_st_index="16" c1_end_index="17" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk0_fpga3" component1="part0" component2="clk0_fpga3">
+		<connection_map name="part0_clk0_fpga3_0" c1_st_index="18" c1_end_index="19" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk1_fpga3" component1="part0" component2="clk1_fpga3">
+		<connection_map name="part0_clk1_fpga3_0" c1_st_index="20" c1_end_index="21" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk2_fpga3" component1="part0" component2="clk2_fpga3">
+		<connection_map name="part0_clk2_fpga3_0" c1_st_index="22" c1_end_index="23" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk3_fpga3" component1="part0" component2="clk3_fpga3">
+		<connection_map name="part0_clk3_fpga3_0" c1_st_index="24" c1_end_index="25" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_clk_ref_fpga3" component1="part0" component2="clk_ref_fpga3">
+		<connection_map name="part0_clk_ref_fpga3_0" c1_st_index="26" c1_end_index="27" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_fpga3_clk_200" component1="part0" component2="fpga3_clk_200">
+		<connection_map name="part0_fpga3_clk_200_0" c1_st_index="28" c1_end_index="29" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+
+	<connection name="part0_ddr4_1600" component1="part0" component2="ddr4_1600">
+		<connection_map name="part0_ddr4_1600_0" c1_st_index="30" c1_end_index="53" c2_st_index="0" c2_end_index="23"/>
+		<connection_map name="part0_ddr4_1600_1" c1_st_index="58" c1_end_index="59" c2_st_index="0" c2_end_index="1"/>
+		<connection_map name="part0_ddr4_1600_2" c1_st_index="64" c1_end_index="64" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_1600_3" c1_st_index="70" c1_end_index="70" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_1600_4" c1_st_index="74" c1_end_index="161" c2_st_index="0" c2_end_index="87"/>
+		<connection_map name="part0_ddr4_1600_5" c1_st_index="166" c1_end_index="166" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_1600_6" c1_st_index="169" c1_end_index="169" c2_st_index="0" c2_end_index="0"/>
+	</connection>
+
+	<connection name="part0_ddr4_1866" component1="part0" component2="ddr4_1866">
+		<connection_map name="part0_ddr4_1866_0" c1_st_index="30" c1_end_index="53" c2_st_index="0" c2_end_index="23"/>
+		<connection_map name="part0_ddr4_1866_1" c1_st_index="58" c1_end_index="59" c2_st_index="0" c2_end_index="1"/>
+		<connection_map name="part0_ddr4_1866_2" c1_st_index="64" c1_end_index="64" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_1866_3" c1_st_index="70" c1_end_index="70" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_1866_4" c1_st_index="74" c1_end_index="161" c2_st_index="0" c2_end_index="87"/>
+		<connection_map name="part0_ddr4_1866_5" c1_st_index="166" c1_end_index="166" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_1866_6" c1_st_index="169" c1_end_index="169" c2_st_index="0" c2_end_index="0"/>
+	</connection>
+
+	<connection name="part0_ddr4_2100" component1="part0" component2="ddr4_2100">
+		<connection_map name="part0_ddr4_2100_0" c1_st_index="30" c1_end_index="53" c2_st_index="0" c2_end_index="23"/>
+		<connection_map name="part0_ddr4_2100_1" c1_st_index="58" c1_end_index="59" c2_st_index="0" c2_end_index="1"/>
+		<connection_map name="part0_ddr4_2100_2" c1_st_index="64" c1_end_index="64" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_2100_3" c1_st_index="70" c1_end_index="70" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_2100_4" c1_st_index="74" c1_end_index="161" c2_st_index="0" c2_end_index="87"/>
+		<connection_map name="part0_ddr4_2100_5" c1_st_index="166" c1_end_index="166" c2_st_index="0" c2_end_index="0"/>
+		<connection_map name="part0_ddr4_2100_6" c1_st_index="169" c1_end_index="169" c2_st_index="0" c2_end_index="0"/>
+	</connection>
+
+</connections>
+
+<ip_associated_rules>
+</ip_associated_rules>
+</board>
