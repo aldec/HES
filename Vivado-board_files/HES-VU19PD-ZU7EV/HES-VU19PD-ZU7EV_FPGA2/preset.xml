@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ip_presets schema="1.0">
+
+  <ip_preset preset_proc_name="clk_ddr_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="200.00"/>
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="clk_qsfp_preset">
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDSGTE" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk0_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="200"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk1_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="150"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk2_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="400"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk3_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="300"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk4_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="50"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk5_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="50"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk6_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="50"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk7_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="50"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk8_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="50"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk9_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="50"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk10_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="100"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk11_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="100"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk_bp_ref_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="156.25"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk_gt_preset">
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDSGTE" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+   <ip_preset preset_proc_name="clk_ref2_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="200"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+        <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDS" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+        </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="ddr4_938_preset">
+    <ip vendor="xilinx.com" library="ip" name="ddr4">
+      <user_parameters>
+	<user_parameter name="CONFIG.C0.DDR4_MemoryType" value="SODIMMs" />
+	<user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="938" />
+        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="5002" />
+	<user_parameter name="CONFIG.C0.DDR4_CustomParts" value="DDR4-HES-VU19PD-ZU7EV.csv" />
+	<user_parameter name="CONFIG.C0.DDR4_MemoryPart" value="GR4A16G266D8C_16G_ECC_CS14" />
+        <user_parameter name="CONFIG.C0.DDR4_CasWriteLatency" value="11" />
+        <user_parameter name="CONFIG.C0.DDR4_CasLatency" value="14" />
+        <user_parameter name="CONFIG.C0.DDR4_Mem_Add_Map" value="ROW_COLUMN_BANK_INTLV" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiAddressWidth" value="34" />
+        <user_parameter name="CONFIG.System_Clock" value="Differential" />
+        <user_parameter name="CONFIG.C0.DDR4_DataWidth" value="72" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiDataWidth" value="512" />
+        <user_parameter name="CONFIG.C0.DDR4_isCustom" value="true" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="ddr4_1071_preset">
+    <ip vendor="xilinx.com" library="ip" name="ddr4">
+      <user_parameters>
+	<user_parameter name="CONFIG.C0.DDR4_MemoryType" value="SODIMMs" />
+	<user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="1071" />
+        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="4998" />
+	<user_parameter name="CONFIG.C0.DDR4_CustomParts" value="DDR4-HES-VU19PD-ZU7EV.csv" />
+	<user_parameter name="CONFIG.C0.DDR4_MemoryPart" value="GR4A16G266D8C_16G_ECC_CS12" />
+        <user_parameter name="CONFIG.C0.DDR4_CasWriteLatency" value="10" />
+        <user_parameter name="CONFIG.C0.DDR4_CasLatency" value="12" />
+        <user_parameter name="CONFIG.C0.DDR4_Mem_Add_Map" value="ROW_COLUMN_BANK_INTLV" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiAddressWidth" value="34" />
+        <user_parameter name="CONFIG.System_Clock" value="Differential" />
+        <user_parameter name="CONFIG.C0.DDR4_DataWidth" value="72" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiDataWidth" value="512" />
+        <user_parameter name="CONFIG.C0.DDR4_isCustom" value="true" />
+	  </user_parameters>
+    </ip>
+  </ip_preset>
+
+
+  <ip_preset preset_proc_name="ddr4_1250_preset">
+    <ip vendor="xilinx.com" library="ip" name="ddr4">
+      <user_parameters>
+	<user_parameter name="CONFIG.C0.DDR4_MemoryType" value="SODIMMs" />
+	<user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="1250" />
+        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="5000" />
+	<user_parameter name="CONFIG.C0.DDR4_CustomParts" value="DDR4-HES-VU19PD-ZU7EV.csv" />
+	<user_parameter name="CONFIG.C0.DDR4_MemoryPart" value="GR4A16G266D8C_16G_ECC_CS10" />
+        <user_parameter name="CONFIG.C0.DDR4_CasWriteLatency" value="9" />
+        <user_parameter name="CONFIG.C0.DDR4_CasLatency" value="10" />
+        <user_parameter name="CONFIG.C0.DDR4_Mem_Add_Map" value="ROW_COLUMN_BANK_INTLV" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiAddressWidth" value="34" />
+        <user_parameter name="CONFIG.System_Clock" value="Differential" />
+        <user_parameter name="CONFIG.C0.DDR4_DataWidth" value="72" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiDataWidth" value="512" />
+        <user_parameter name="CONFIG.C0.DDR4_isCustom" value="true" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="ddr4_1250_64bit_preset">
+    <ip vendor="xilinx.com" library="ip" name="ddr4">
+      <user_parameters>
+	<user_parameter name="CONFIG.C0.DDR4_MemoryType" value="SODIMMs" />
+	<user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="1250" />
+        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="5000" />
+	<user_parameter name="CONFIG.C0.DDR4_CustomParts" value="DDR4-HES-VU19PD-ZU7EV.csv" />
+	<user_parameter name="CONFIG.C0.DDR4_MemoryPart" value="GR4A16G266D8C_16G_CS10" />
+        <user_parameter name="CONFIG.C0.DDR4_CasWriteLatency" value="9" />
+        <user_parameter name="CONFIG.C0.DDR4_CasLatency" value="10" />
+        <user_parameter name="CONFIG.C0.DDR4_Mem_Add_Map" value="ROW_COLUMN_BANK_INTLV" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiAddressWidth" value="34" />
+        <user_parameter name="CONFIG.System_Clock" value="Differential" />
+        <user_parameter name="CONFIG.C0.DDR4_DataWidth" value="64" />
+        <user_parameter name="CONFIG.C0.DDR4_AxiDataWidth" value="512" />
+        <user_parameter name="CONFIG.C0.DDR4_isCustom" value="true" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpa1_1x_preset">
+    <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.NUM_OF_CORES" value="1" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y9" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="qsfpa1_2x_preset">
+    <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.NUM_OF_CORES" value="2" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y9" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="qsfpa1_3x_preset">
+    <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.NUM_OF_CORES" value="3" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y9" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="qsfpa1_4x_preset">
+    <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.NUM_OF_CORES" value="4" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y9" />
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="l_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.LINE_RATE" value="40" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y9" />
+      </user_parameters>
+    </ip>	
+  </ip_preset>
+
+  <ip_preset preset_proc_name="qsfpa2_1x_preset">
+    <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.NUM_OF_CORES" value="1" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y4" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="qsfpa2_2x_preset">
+    <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.NUM_OF_CORES" value="2" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y4" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="qsfpa2_3x_preset">
+    <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.NUM_OF_CORES" value="3" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y4" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="qsfpa2_4x_preset">
+    <ip vendor="xilinx.com" library="ip" name="xxv_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.NUM_OF_CORES" value="4" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y4" />
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="l_ethernet">
+      <user_parameters>
+        <user_parameter name="CONFIG.GT_REF_CLK_FREQ" value="156.25" />
+        <user_parameter name="CONFIG.LINE_RATE" value="40" />
+        <user_parameter name="CONFIG.GT_TYPE" value="GTY" />
+        <user_parameter name="CONFIG.GT_GROUP_SELECT" value="Quad_X0Y4" />
+      </user_parameters>
+    </ip>	
+  </ip_preset>
+
+  <ip_preset preset_proc_name="pciex1_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X1" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" />  
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>	
+    <ip vendor="xilinx.com" library="ip" name="pcie4c_uscale_plus">
+      <user_parameters>  
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X1" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  
+  <ip_preset preset_proc_name="pciex2_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X2" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" />  
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="pcie4c_uscale_plus">
+      <user_parameters> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X2" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>
+   </ip_preset>
+   
+   <ip_preset preset_proc_name="pciex4_preset">
+     <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X4" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" /> 
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" />  
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="pcie4c_uscale_plus">
+      <user_parameters>  
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X4" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>
+   </ip_preset>
+  
+   <ip_preset preset_proc_name="pciex8_preset">
+    <ip vendor="xilinx.com" library="ip" name="xdma">
+      <user_parameters>
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X8" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" />
+        <user_parameter name="CONFIG.pl_link_cap_max_link_speed" value="8.0_GT/s" />  
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="pcie4c_uscale_plus">
+      <user_parameters>  
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X8" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" />  
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  
+   <ip_preset preset_proc_name="pciex16_preset">
+    <ip vendor="xilinx.com" library="ip" name="pcie4c_uscale_plus">
+      <user_parameters>  
+        <user_parameter name="CONFIG.pl_link_cap_max_link_width" value="X16" />
+        <user_parameter name="CONFIG.mode_selection" value="Advanced" /> 
+        <user_parameter name="CONFIG.en_gt_selection" value="true"/>
+        <user_parameter name="CONFIG.select_quad" value="GTY_Quad_227" /> 
+        <user_parameter name="CONFIG.ref_clk_freq" value="100_MHz" /> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="pcie_refclk_preset">
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_BUF_TYPE" value="IBUFDSGTE" />
+        <user_parameter name="CONFIG.C_SIZE" value="1" />
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+  <ip_preset preset_proc_name="uart_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_uartlite" ip_interface="UART">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_DATA_BITS" value="8"/>
+        <user_parameter name="CONFIG.C_BAUDRATE" value="115200"/>
+        <user_parameter name="CONFIG.PARITY" value="No_Parity"/>
+        <user_parameter name="CONFIG.C_USE_PARITY" value="0"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+
+</ip_presets>

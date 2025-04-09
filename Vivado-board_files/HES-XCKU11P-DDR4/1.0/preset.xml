@@ -846,7 +846,7 @@
       <user_parameters>
 	<user_parameter name="CONFIG.C0.DDR4_MemoryType" value="SODIMMs" />
 	<user_parameter name="CONFIG.C0.DDR4_TimePeriod" value="938" />
-        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="4879" />
+        <user_parameter name="CONFIG.C0.DDR4_InputClockPeriod" value="5002" />
 	<user_parameter name="CONFIG.C0.DDR4_CustomParts" value="custom_parts_ddr4_single.csv" />
 	<user_parameter name="CONFIG.C0.DDR4_MemoryPart" value="DDR4_1R_ALDEC_CS15" />
         <user_parameter name="CONFIG.C0.DDR4_CasWriteLatency" value="12" />

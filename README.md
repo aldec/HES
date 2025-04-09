@@ -34,8 +34,11 @@ Vivado board definition files contain configuration of FPGAs available on the bo
 The board definition files for HES boards can be found in Vivado-board_files folder.
 
 The board definition files are provided for the following Aldec HES boards:
--   [HES-XCKU11P-DDR4 (Xilinx Kintex UltraScale+ XCKU11P FPGA)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/kintex_ultrascale_plus/hes_xcku11p_ddr4)
--	[HES-XCVU9P-QDR (Xilinx Virtex UltraScale+ XCVU9P FPGA)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale_plus/hes_xcvu9p_qdr)
--	[HES-XCVU9P-ZU7EV (Xilinx ZU7EV Zynq® UltraScale+™ MPSoC and a VU9P Virtex® UltraScale+™ FPGA)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale_plus/hes_xcvu9p_zu7ev)
--   [HESXUS1320BPX (Xilinx Virtex UltraScale XCVU440)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale/hes_us_1320)
--	[HES-US-440 (Xilinx Virtex UltraScale XCVU440)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale/hes_us_440)
+- [HES-VU19PD-ZU7EV (Xilinx ZU7EV Zynq® UltraScale+™ MPSoC and dual VU19P Virtex® UltraScale+™ FPGA)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale_plus/hes_vu19pd_zu7ev)
+- [HES-XCKU11P-DDR4 (Xilinx Kintex UltraScale+ XCKU11P FPGA)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/kintex_ultrascale_plus/hes_xcku11p_ddr4)
+- [HES-XCVU9P-QDR (Xilinx Virtex UltraScale+ XCVU9P FPGA)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale_plus/hes_xcvu9p_qdr)
+- [HES-XCVU9P-ZU7EV (Xilinx ZU7EV Zynq® UltraScale+™ MPSoC and a VU9P Virtex® UltraScale+™ FPGA)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale_plus/hes_xcvu9p_zu7ev)
+- [HESXUS1320BPX (Xilinx Virtex UltraScale XCVU440)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale/hes_us_1320)
+- [HES-US-440 (Xilinx Virtex UltraScale XCVU440)](https://www.aldec.com/en/products/emulation/hes_fpga_boards/virtex_ultrascale/hes_us_440)
+
+![Aldec, Inc.](https://www.aldec.com/images/content/corporate/Corporate_Logo_Aldec_Crescent.png)

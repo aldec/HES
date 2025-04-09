@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xczu7ev-ffvc1156-2-e">
+<pins>
+
+	<!--clocks-->
+	<pin index="0" name="CLK0_FPGA0_N" loc="F15" iostandard="LVDS"/>
+	<pin index="1" name="CLK0_FPGA0_P" loc="G15" iostandard="LVDS"/>
+	<pin index="2" name="CLK2_FPGA0_N" loc="AK20" iostandard="LVDS"/>
+	<pin index="3" name="CLK2_FPGA0_P" loc="AJ20" iostandard="LVDS"/>
+	<pin index="4" name="CLK_REF0_N" loc="C2" iostandard="LVDS_25"/>
+	<pin index="5" name="CLK_REF0_P" loc="D2" iostandard="LVDS_25"/>
+	<pin index="6" name="CLK4_FPGA0_N" loc="B3" iostandard="LVDS_25"/>
+	<pin index="7" name="CLK4_FPGA0_P" loc="C3" iostandard="LVDS_25"/>
+	<pin index="8" name="CLK6_FPGA0_N" loc="B4" iostandard="LVDS_25"/>
+	<pin index="9" name="CLK6_FPGA0_P" loc="C4" iostandard="LVDS_25"/>
+	<pin index="10" name="CLK10_FPGA0_N" loc="J9" iostandard="LVDS_25"/>
+	<pin index="11" name="CLK10_FPGA0_P" loc="K9" iostandard="LVDS_25"/>
+	<pin index="12" name="CLK11_FPGA0_N" loc="D4" iostandard="LVDS_25"/>
+	<pin index="13" name="CLK11_FPGA0_P" loc="E4" iostandard="LVDS_25"/>
+	<pin index="14" name="CLK_GT9_N" loc="V7"/>
+	<pin index="15" name="CLK_GT9_P" loc="V8"/>
+
+	<!--PCIe-->
+	<pin index="16" name="FPGA0_PCIE_RXC0_N" loc="AE1"/>
+	<pin index="17" name="FPGA0_PCIE_RXC0_P" loc="AE2"/>
+	<pin index="18" name="FPGA0_PCIE_RXC1_N" loc="AF3"/>
+	<pin index="19" name="FPGA0_PCIE_RXC1_P" loc="AF4"/>
+	<pin index="20" name="FPGA0_PCIE_RXC2_N" loc="AG1"/>
+	<pin index="21" name="FPGA0_PCIE_RXC2_P" loc="AG2"/>
+	<pin index="22" name="FPGA0_PCIE_RXC3_N" loc="AJ1"/>
+	<pin index="23" name="FPGA0_PCIE_RXC3_P" loc="AJ2"/>
+	<pin index="24" name="FPGA0_PCIE_RXC4_N" loc="AK3"/>
+	<pin index="25" name="FPGA0_PCIE_RXC4_P" loc="AK4"/>
+	<pin index="26" name="FPGA0_PCIE_RXC5_N" loc="AL1"/>
+	<pin index="27" name="FPGA0_PCIE_RXC5_P" loc="AL2"/>
+	<pin index="28" name="FPGA0_PCIE_RXC6_N" loc="AN1"/>
+	<pin index="29" name="FPGA0_PCIE_RXC6_P" loc="AN2"/>
+	<pin index="30" name="FPGA0_PCIE_RXC7_N" loc="AP3"/>
+	<pin index="31" name="FPGA0_PCIE_RXC7_P" loc="AP4"/>
+	<pin index="32" name="FPGA0_PCIE_TXC0_N" loc="AD3"/>
+	<pin index="33" name="FPGA0_PCIE_TXC0_P" loc="AD4"/>
+	<pin index="34" name="FPGA0_PCIE_TXC1_N" loc="AE5"/>
+	<pin index="35" name="FPGA0_PCIE_TXC1_P" loc="AE6"/>
+	<pin index="36" name="FPGA0_PCIE_TXC2_N" loc="AG5"/>
+	<pin index="37" name="FPGA0_PCIE_TXC2_P" loc="AG6"/>
+	<pin index="38" name="FPGA0_PCIE_TXC3_N" loc="AH3"/>
+	<pin index="39" name="FPGA0_PCIE_TXC3_P" loc="AH4"/>
+	<pin index="40" name="FPGA0_PCIE_TXC4_N" loc="AJ5"/>
+	<pin index="41" name="FPGA0_PCIE_TXC4_P" loc="AJ6"/>
+	<pin index="42" name="FPGA0_PCIE_TXC5_N" loc="AL5"/>
+	<pin index="43" name="FPGA0_PCIE_TXC5_P" loc="AL6"/>
+	<pin index="44" name="FPGA0_PCIE_TXC6_N" loc="AM3"/>
+	<pin index="45" name="FPGA0_PCIE_TXC6_P" loc="AM4"/>
+	<pin index="46" name="FPGA0_PCIE_TXC7_N" loc="AN5"/>
+	<pin index="47" name="FPGA0_PCIE_TXC7_P" loc="AN6"/>
+	<pin index="48" name="FPGA0_PERSTN" iostandard="LVCMOS18" loc="D7"/>
+	<pin index="49" name="SW_FPGA0_REFCLK_N" loc="AB7"/>
+	<pin index="50" name="SW_FPGA0_REFCLK_P" loc="AB8"/>
+
+	<!--diagnostic I2C-->
+	<pin index="51" name="DIAGNOSTIC_I2C_SCL" iostandard="LVCMOS33" loc="K8"/>
+	<pin index="52" name="DIAGNOSTIC_I2C_SDA" iostandard="LVCMOS33" loc="L8"/>
+
+	<!-- global nreset -->
+	<pin index="53" name="GLOBAL_RESET1" iostandard="LVCMOS33" loc ="H8"/>
+	<pin index="54" name="GLOBAL_RESET2" iostandard="LVCMOS33" loc ="L10"/>
+	<pin index="55" name="RESET_F1_F2_OE#" iostandard="LVCMOS25" loc ="F5"/>
+
+</pins>
+</part_info>
